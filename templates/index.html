@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+<h1>Reservation System</h1>
+<label>Date: <input type="date" id="date"></label>
+<label>Time: <input type="time" id="time"></label>
+<label>User: <input type="text" id="user"></label>
+<button onclick="makeReservation()">Reserve</button>
+<p id="message"></p>
+</body>
+</html>
